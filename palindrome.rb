@@ -1,5 +1,5 @@
 def palindrome?(string)
- string == string.reverse!
+ puts string == string.reverse
 end
 
 
@@ -11,7 +11,7 @@ def reverse_string(string)
     ctr -= 1
   end
   b = a.join("")
-  b 
+  b
 end
 
 
