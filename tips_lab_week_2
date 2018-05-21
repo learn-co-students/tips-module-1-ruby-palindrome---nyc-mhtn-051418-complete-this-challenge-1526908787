@@ -1,0 +1,12 @@
+def palindrome?(string)
+  if string.reverse == strings
+    true
+  else
+    false
+  end
+end
+
+palindrome?("noon")
+palindrome?("five")
+palindrome?("radar")
+palindrome?("learnlovecode")
