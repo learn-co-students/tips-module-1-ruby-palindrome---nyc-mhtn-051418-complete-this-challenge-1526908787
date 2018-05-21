@@ -24,9 +24,8 @@ def palindrome_recursive?(word, start)
   if word[word.length-1] == word[start]
     binding.pry
     #get rid of last letter
-    start += 1
     word = word[start,word.length-1]
-    return palindrome_recursive?(word, start)
+    return palindrome_recursive?(word, start+1)
   else
     return false
   end
