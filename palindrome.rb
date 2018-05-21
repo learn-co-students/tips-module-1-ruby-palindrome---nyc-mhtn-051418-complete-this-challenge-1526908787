@@ -1,11 +1,8 @@
 
 require 'pry'
 def palindrome?(word)
-  if word == word.reverse
-    return true
-  else
-    return false
-  end
+  return word == word.reverse
+
 end
 
 
@@ -15,17 +12,17 @@ end
 
 
 
-def palindrome_recursive?(word, start)
-  if start == word.length/2
+def palindrome_recursive?(word)
+  if word.length == 1
     return true
   end
 
   #check to see if last letter is equal to new first letter
-  if word[word.length-1] == word[start]
+  if word[word.length-1] == word[0]
     binding.pry
     #get rid of last letter
-    word = word[start,word.length-1]
-    return palindrome_recursive?(word, start+1)
+    word = word[1,word.length-2]
+    return palindrome_recursive?(word)
   else
     return false
   end
