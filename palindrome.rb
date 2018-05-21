@@ -1,3 +1,3 @@
 def palindrome?(string)
-  string.reverse! == string
+ string ==  string.reverse!
 end
