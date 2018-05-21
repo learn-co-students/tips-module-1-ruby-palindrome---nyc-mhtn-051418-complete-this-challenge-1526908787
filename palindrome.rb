@@ -11,7 +11,7 @@ def reverse_string(string)
     ctr -= 1
   end
   b = a.join("")
-  b
+  b 
 end
 
 
